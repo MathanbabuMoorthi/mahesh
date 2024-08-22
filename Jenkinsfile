@@ -45,4 +45,13 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            script {
+                echo "Cleaning up Docker images..."
+                sh "docker stop ${env.CONTAINER_NAME} || true"
+                sh "docker rmi ${env.DOCKER_IMAGE} || true"
+            }
+        }
+    }
 }

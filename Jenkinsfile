@@ -45,13 +45,4 @@ pipeline {
             }
         }
     }
-
-    post {
-        always {
-            script {
-                echo "Cleaning up Docker images..."
-                sh "docker rmi ${env.DOCKER_IMAGE} || true"
-            }
-        }
-    }
 }

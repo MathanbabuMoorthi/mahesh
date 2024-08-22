@@ -5,7 +5,7 @@ pipeline {
         DOCKER_IMAGE = "react:v1"
         CONTAINER_NAME = "react-login"
         DOCKERHUB_CREDENTIALS = 'da22d71d-3ce2-4e73-9e6a-79ea4657cff5'
-        GIT_REPO_URL = 'https://github.com/Mageshpoopathi/React.git'
+        GIT_REPO_URL = 'https://github.com/MathanbabuMoorthi/mahesh.git'
         APP_PORT = '3000'
     }
 

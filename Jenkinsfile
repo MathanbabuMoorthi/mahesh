@@ -19,7 +19,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    sh "docker built -t "${env.DOCKER_IMAGE}""
+                    sh "docker built -t ${env.DOCKER_IMAGE}"
                 }
             }
         }

@@ -1,7 +1,7 @@
 FROM node:14-alpine
 
 RUN apk add --no-cache git
-#this is commit to check the work item integration with ADO
+#this  is commit to check the work item integration with ADO
 WORKDIR /app
 
 RUN rm -rf subdirectory
